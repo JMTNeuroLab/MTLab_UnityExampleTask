@@ -6,4 +6,4 @@ Misc Files required for the MonkeyLogic - Unity - EyeLink interface. Such as the
 
 # MonkeyLogic <-> LSL <-> Unity Architecture
 
-![Architecture](https://github.com/doug1983/Temp/Unity_ML_Doc.jpg)
+![Architecture](https://github.com/Doug1983/Temp/blob/master/Unity_ML_Doc.jpg)
