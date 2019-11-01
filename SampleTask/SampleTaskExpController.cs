@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 ///  This is a sub-class of the base Experiment controller. It can be used to 
@@ -21,7 +22,7 @@ using UnityEngine;
 ///  be overriden by the sub-class so be careful when naming them. If you 
 ///  add a function in your sub-class with the same name as a base class function you will 
 ///  get a warning and will need to add a "new" keyword to remove it. Private functions in the base
-///  class are not accessible in the sub-class so there is no need for the new jkeyword. This means
+///  class are not accessible in the sub-class so there is no need for the new keyword. This means
 ///  that the base function will NOT be executed anymore, hence the use of "base.OnEnable();" in 
 ///  the code. See the OnEnable() function below. In this case these are MonoBehavior functions so 
 ///  we can't rename them. This is why we use the "new" keyword.
@@ -55,7 +56,7 @@ public class SampleTaskExpController : ExperimentController
     // We use a specific sub-class of task info and set it as "taskInfo" so
     // all the base scripts will still work. 
     public SampleTaskTaskInfo sTaskInfo;
-
+    
     // OnEnable and OnDisable function calls are important because they connect the
     // experiment controller with the events controller for communication across classes. 
     private new void OnEnable()
@@ -66,15 +67,10 @@ public class SampleTaskExpController : ExperimentController
         // ----------------------------
     }
 
-    private new void OnDisable()
-    { 
-        base.OnDisable();
-    }
-
     private void Start()
     {
-        // Base function call. 
+        // Base function call. Do not remove. 
         base.Initialize();
-        
     }
+
 }

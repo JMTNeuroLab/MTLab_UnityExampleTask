@@ -33,7 +33,7 @@ public class PlaybackExpController : ExperimentController
     private new void OnEnable()
     {
         taskInfo = pTaskInfo;
-
+        GenerateIDMap();
         EventsController.OnPlaybackParamUpdate += UpdateTrialParameters;
         EventsController.OnPlaybackDataUpdate += UpdataTrialData;
         EventsController.OnPlaybackStart += StartPlayback;
@@ -73,14 +73,14 @@ public class PlaybackExpController : ExperimentController
         _currentTrial.Trial_Number = parameters.Trial_Number;
         _currentTrial.Start_Position = parameters.Start_Position;
 
-        _currentTrial.Cue_Objects = FindInTaskInfo(taskInfo.CueObjects, parameters.cue_Objects);
-        _currentTrial.Target_Objects = FindInTaskInfo(taskInfo.TargetObjects, parameters.target_Objects);
-        _currentTrial.Distractor_Objects = FindInTaskInfo(taskInfo.DistractorObjects, parameters.distractor_Objects);
+        _currentTrial.Cue_Objects = FindInTaskInfo(taskInfo.CueObjects, parameters.Cue_Objects);
+        _currentTrial.Target_Objects = FindInTaskInfo(taskInfo.TargetObjects, parameters.Target_Objects);
+        _currentTrial.Distractor_Objects = FindInTaskInfo(taskInfo.DistractorObjects, parameters.Distractor_Objects);
 
         _currentTrial.Target_Positions = parameters.Target_Positions;
         _currentTrial.Distractor_Positions = parameters.Distractor_Positions;
 
-        Condition temp_cnd = FindCurrentCondition(parameters.cue_Material, parameters.target_Materials, parameters.distractor_Materials);
+        Condition temp_cnd = FindCurrentCondition(parameters.Cue_Material, parameters.Target_Materials, parameters.Distractor_Materials);
         _currentTrial.Cue_Material = temp_cnd.CueMaterial;
         _currentTrial.Target_Materials = temp_cnd.TargetMaterials;
         _currentTrial.Distractor_Materials = temp_cnd.DistractorMaterials;
@@ -173,7 +173,7 @@ public class PlaybackExpController : ExperimentController
             Vector2 _eyePix = new Vector2 { x = x, y = y };
             
             // manually convert to pixels
-            gp.ProcessGaze(_eyePix, out string[] gazeTargets, out float[] gazeCounts, out Vector3[] hitPoints);
+            gp.ProcessGaze(_eyePix, out float[] gazeTargets, out float[] gazeCounts, out Vector3[] hitPoints);
             DisplayTargets(gazeTargets, gazeCounts);
             gv.ShowGaze(hitPoints);
 
@@ -246,12 +246,13 @@ public class PlaybackExpController : ExperimentController
         }
     }
 
-    private void DisplayTargets(string[] names, float[] counts)
+    private void DisplayTargets(float[] names, float[] counts)
     {
         string txt = "";
+        
         for (int i = 0; i < names.Length; i++)
         {
-            txt += names[i] + " [" + counts[i].ToString() + "] \n";
+            txt += IDToName((int)names[i]) + " [" + counts[i].ToString() + "] \n";
         }
         txt_Targets.text = txt;
     }
