@@ -743,9 +743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
-  monkeyLogicController: {fileID: 0}
-  eyeLinkController: {fileID: 0}
-  userInputController: {fileID: 0}
   pbCtrl: {fileID: 722445614}
   txt_Targets: {fileID: 1173711822}
   pTaskInfo: {fileID: 1760409361}
@@ -848,7 +845,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 58.72078
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1043,6 +1040,7 @@ MonoBehaviour:
   ScreenOffset: 0
   MenuBarHeight: 21
   AutoLaunch: 0
+  CameraFOV: 90
 --- !u!223 &892864277
 Canvas:
   m_ObjectHideFlags: 0
@@ -1620,6 +1618,11 @@ MonoBehaviour:
   MaxTrialTime: 50
   ErrorPenalty: 0
   IgnorePenalty: 0
+  FixationObjects: []
+  ScreenFixationOffsets: []
+  WorldFixationOffsets: []
+  FixationObjectSize: 0.005
+  FixationWindow: 5
   CueOnsetTriggers:
   - {fileID: 1925627691}
   CueObjects:
