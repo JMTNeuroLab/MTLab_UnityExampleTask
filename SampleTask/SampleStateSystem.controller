@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0ba17840bd2a4c94acb4e0142c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateName: 9
+  StateName: 10
   MinStateDuration: 0
   MaxStateDuration: 0
   RequiresFixation: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0ba17840bd2a4c94acb4e0142c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateName: 10
+  StateName: 11
   MinStateDuration: 0
   MaxStateDuration: 0
   RequiresFixation: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0ba17840bd2a4c94acb4e0142c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateName: 8
+  StateName: 9
   MinStateDuration: 0
   MaxStateDuration: -1
   RequiresFixation: 0
@@ -529,25 +529,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stop
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: StateOver
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TrialOver
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0ba17840bd2a4c94acb4e0142c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateName: 7
+  StateName: 8
   MinStateDuration: 0
   MaxStateDuration: 0
   RequiresFixation: 0

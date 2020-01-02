@@ -219,8 +219,7 @@ MonoBehaviour:
   MaxTrialTime: 50
   ErrorPenalty: 0
   IgnorePenalty: 5
-  FixationObjects:
-  - {fileID: 0}
+  FixationObjects: []
   ScreenFixationOffsets: []
   WorldFixationOffsets: []
   FixationObjectSize: 0.005
