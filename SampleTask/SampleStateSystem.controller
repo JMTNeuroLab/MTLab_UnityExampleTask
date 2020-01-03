@@ -877,7 +877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0ba17840bd2a4c94acb4e0142c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateName: 0
+  StateName: 14
   MinStateDuration: 0
   MaxStateDuration: -1
   RequiresFixation: 0
@@ -894,6 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef93b789ff0291b44a1075d65174b65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HideCues: 1
 --- !u!1102 &5454532786424989897
 AnimatorState:
   serializedVersion: 5

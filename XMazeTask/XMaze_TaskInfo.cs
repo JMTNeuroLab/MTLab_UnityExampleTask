@@ -6,12 +6,19 @@ public class XMaze_TaskInfo : TaskInfo
 {
     // Graded or all/nothing reward
     public bool GradedReward = true;
-    // Textures for context 2 and color hierarchy
+
+    // Position Markers
+    public GameObject NorthMarker;
+    public GameObject SouthMarker;
+    public GameObject NorthTrigger;
+    public GameObject SouthTrigger;
+
+    // Materials for context 2 and color hierarchy
     public Material Ctx_One;
     public Material High_CtxOne;
     public Material Mid_CtxOne;
     public Material Low_CtxOne;
-    // Textures for context 2 and color hierarchy
+    // Materials for context 2 and color hierarchy
     public Material Ctx_Two;
     public Material High_CtxTwo;
     public Material Mid_CtxTwo;
@@ -21,7 +28,9 @@ public class XMaze_TaskInfo : TaskInfo
     // grids for target placement for example. 
     private void OnValidate()
     {
-        // Call the validate function of base-class TaskInfo
+        // Call the validate function of base-class TaskInfo.
+        // Note that we do not use base.OnValidate() as this function
+        // is not "virtual" so we are not "overridding" it. 
         BaseValidate();
 
         // Generate the Condition list for the two contexts. 

@@ -4,6 +4,8 @@ public class XMaze_ForceFOV : StateMachineBehaviour
 {
     // X, "Z" coordinates for target onset
     // 2D vectors use x and y, we will assing z value to y
+    // Remember that values set here are only the "default" values, they 
+    // are fully editable in the Inspector GUI as they are "public". 
     public Vector2 N_OnsetPosition = new Vector2 { x = 519.75f, y = 500f };  
     public Vector2 S_OnsetPosition = new Vector2 { x = 480.25f, y = 500f };
 
@@ -15,7 +17,7 @@ public class XMaze_ForceFOV : StateMachineBehaviour
     public float default_rotation_rate = 1f;
     public float default_translation_rate = 0.1f;
 
-    // keep current target instead of always checking if IsNorth
+    // keep current trial targets 
     private Vector2 target_Position;
     private float target_Rotation;
 
