@@ -227,8 +227,8 @@ MonoBehaviour:
   FixationWindow: 5
   CueOnsetTriggers: []
   CueObjects:
-  - {fileID: 2102409071}
-  - {fileID: 2021249628}
+  - {fileID: 1754822295}
+  - {fileID: 849744440}
   TargetOnsetTriggers: []
   TargetObjects:
   - {fileID: 1488199948}
@@ -1520,6 +1520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
+    - target: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
+        type: 3}
+      propertyPath: m_Name
+      value: SouthWall
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 2a698d898f5ef85429d21399f921b561,
         type: 3}
       propertyPath: m_Name
@@ -1594,11 +1599,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.025
-      objectReference: {fileID: 0}
-    - target: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
-        type: 3}
-      propertyPath: m_Name
-      value: SouthWall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a698d898f5ef85429d21399f921b561, type: 3}
@@ -1859,7 +1859,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 94.71977
+  field of view: 61.943
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2018,6 +2018,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
+    - target: {fileID: 2534866581884222612, guid: 127fdc7ce09cd024589123ffab201edd,
+        type: 3}
+      propertyPath: m_Name
+      value: WestWall
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 127fdc7ce09cd024589123ffab201edd,
         type: 3}
       propertyPath: m_Name
@@ -2093,22 +2098,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.025
       objectReference: {fileID: 0}
-    - target: {fileID: 2534866581884222612, guid: 127fdc7ce09cd024589123ffab201edd,
-        type: 3}
-      propertyPath: m_Name
-      value: WestWall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127fdc7ce09cd024589123ffab201edd, type: 3}
 --- !u!4 &2021249627 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 127fdc7ce09cd024589123ffab201edd,
-    type: 3}
-  m_PrefabInstance: {fileID: 2021249626}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2021249628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 127fdc7ce09cd024589123ffab201edd,
     type: 3}
   m_PrefabInstance: {fileID: 2021249626}
   m_PrefabAsset: {fileID: 0}
@@ -2119,6 +2113,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
+    - target: {fileID: 2534866581884222612, guid: 747b375e73d75d646ac9abeabb8fcf88,
+        type: 3}
+      propertyPath: m_Name
+      value: EastWall
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 747b375e73d75d646ac9abeabb8fcf88,
         type: 3}
       propertyPath: m_Name
@@ -2194,22 +2193,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.025
       objectReference: {fileID: 0}
-    - target: {fileID: 2534866581884222612, guid: 747b375e73d75d646ac9abeabb8fcf88,
-        type: 3}
-      propertyPath: m_Name
-      value: EastWall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747b375e73d75d646ac9abeabb8fcf88, type: 3}
 --- !u!4 &2102409070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 747b375e73d75d646ac9abeabb8fcf88,
-    type: 3}
-  m_PrefabInstance: {fileID: 2102409069}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2102409071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 747b375e73d75d646ac9abeabb8fcf88,
     type: 3}
   m_PrefabInstance: {fileID: 2102409069}
   m_PrefabAsset: {fileID: 0}
