@@ -4,9 +4,23 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
+// Default playback behavior.
+// Edit to inherit from your custom experiment controller. 
 
-public class PlaybackExpController : ExperimentController
-{
+public class XMazePlaybackExpController : XMaze_ExperimentCtrl
+{    
+    private new void OnEnable()
+    {
+        // Edit only with the custom task info variable from the experiment controller
+        taskInfo = xMazeTaskInfo;
+        GenerateIDMap();
+        EventsController.OnPlaybackParamUpdate += UpdateTrialParameters;
+        EventsController.OnPlaybackDataUpdate += UpdataTrialData;
+        EventsController.OnPlaybackStart += StartPlayback;
+        EventsController.OnEyeCalibrationUpdate += UpdateEyeCalibration; 
+    }
+
+    // DO NOT EDIT. ========================================================
     public PlaybackController pbCtrl;
     public Text txt_Targets;
 
@@ -18,27 +32,9 @@ public class PlaybackExpController : ExperimentController
     private float pix_per_deg;
     private int XRes, YRes;
     private int lastState = 13; // States.null;
-    private int N_Frames = 0; 
+    private int N_Frames = 0;
 
-    public override void PrepareAllTrials() {  }
-
-
-    // The taskInfo base class is defined as "dynamic" in the experiment
-    // controller class, this means that the class is implemented at runtime
-    // we therefore need to define it now. 
-    // We use a specific sub-class of task info and set it as "taskInfo" so
-    // all the base scripts will still work. 
-    public PlaybackTaskInfo pTaskInfo;
-    
-    private new void OnEnable()
-    {
-        taskInfo = pTaskInfo;
-        GenerateIDMap();
-        EventsController.OnPlaybackParamUpdate += UpdateTrialParameters;
-        EventsController.OnPlaybackDataUpdate += UpdataTrialData;
-        EventsController.OnPlaybackStart += StartPlayback;
-        EventsController.OnEyeCalibrationUpdate += UpdateEyeCalibration; 
-    }
+    public override void PrepareAllTrials() { }
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +48,7 @@ public class PlaybackExpController : ExperimentController
     private void StartPlayback()
     {
         playTrialData = true;
+        pbCtrl.ManageFileRecording(true);
         Debug.Log("Starting playback");
     }
 
@@ -201,30 +198,32 @@ public class PlaybackExpController : ExperimentController
                         ShowCues();
                         break;
                     case 4: // Delay_2
-                        HideCues();
+                        //HideCues();
                         break;
                     case 5: // Distractor
                         break;
                     case 6: // Delay_3
                         break;
-                    case 7: //Target
+                    case 7: // force FOV
+                        break;
+                    case 8: //Target
                         ShowTargets();
                         ShowDistractors();
                         break;
-                    case 8: // Response
+                    case 9: // Response
                         break;
-                    case 9: //EndOfTrial
+                    case 10: //EndOfTrial
                         HideCues();
                         HideTargets();
                         HideDistractors();
                         break;
-                    case 10: // Feedback
+                    case 11: // Feedback
                         break;
-                    case 11: // Pause
+                    case 12: // Pause
                         break;
-                    case 12: // Resume
+                    case 13: // Resume
                         break;
-                    case 13: // Null
+                    case 14: // Null
                         break;
                 }
 
@@ -235,6 +234,7 @@ public class PlaybackExpController : ExperimentController
         else if (playTrialData && frames.Count < 1)
         {
             playTrialData = false;
+            pbCtrl.ManageFileRecording(false);
             pbCtrl.PublishTrial("Done");
         }
         else
