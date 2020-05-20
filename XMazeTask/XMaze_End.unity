@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 83111431}
   - component: {fileID: 83111432}
   m_Layer: 0
-  m_Name: XMaze_TaskInfo
+  m_Name: TaskInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 8811055056178011640, guid: 1cc769391b203a2478d6ce280d97d383,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8811055056178011640, guid: 1cc769391b203a2478d6ce280d97d383,
         type: 3}
@@ -575,7 +575,7 @@ Transform:
   m_Children:
   - {fileID: 1697063321}
   m_Father: {fileID: 1337264359}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!82 &446497923
 AudioSource:
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 1337264361}
   - component: {fileID: 1337264360}
   m_Layer: 0
-  m_Name: XMaze_ExperimentCtrl
+  m_Name: ExperimentController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1305,8 +1305,8 @@ Transform:
   - {fileID: 1592581713}
   - {fileID: 1349766038}
   - {fileID: 783146818}
-  - {fileID: 216718773}
   - {fileID: 446497922}
+  - {fileID: 216718773}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 83111431}
   - component: {fileID: 83111432}
   m_Layer: 0
-  m_Name: XMaze_TaskInfo
+  m_Name: TaskInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,10 +275,10 @@ MonoBehaviour:
     - {fileID: 2100000, guid: 2ed08549a344e6c43bc23fdad565295c, type: 2}
   MiscTriggers: []
   GradedReward: 1
-  NorthMarker: {fileID: 0}
-  SouthMarker: {fileID: 0}
-  NorthTrigger: {fileID: 0}
-  SouthTrigger: {fileID: 0}
+  NorthMarker: {fileID: 29074127}
+  SouthMarker: {fileID: 1204102609}
+  NorthTrigger: {fileID: 1722068253}
+  SouthTrigger: {fileID: 408532972}
   Ctx_One: {fileID: 2100000, guid: 4e2be6161e9cb5641a6f153377ad6ead, type: 2}
   High_CtxOne: {fileID: 2100000, guid: 2ed08549a344e6c43bc23fdad565295c, type: 2}
   Mid_CtxOne: {fileID: 2100000, guid: 2f2fdaa24d954494f8f53dc8c9fd1c7e, type: 2}
@@ -974,49 +974,6 @@ Transform:
   m_Father: {fileID: 633901913}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1189875771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1189875772}
-  - component: {fileID: 1189875773}
-  m_Layer: 0
-  m_Name: EventsController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1189875772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189875771}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1337264359}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1189875773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189875771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28bc600782e78c641b78c1a24a1f050f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1204102609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1110,7 @@ GameObject:
   - component: {fileID: 1337264361}
   - component: {fileID: 1337264360}
   m_Layer: 0
-  m_Name: XMaze_ExperimentCtrl
+  m_Name: ExperimentController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1128,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 83111431}
-  - {fileID: 1189875772}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
