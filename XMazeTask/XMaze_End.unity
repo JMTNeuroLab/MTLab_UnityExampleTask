@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29074127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.75, y: 0, z: 0}
+  m_LocalPosition: {x: 34.75, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1122538742}
@@ -323,10 +323,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1337264359}
     m_Modifications:
-    - target: {fileID: 8811055056178011641, guid: 1cc769391b203a2478d6ce280d97d383,
+    - target: {fileID: 8811055054076470027, guid: 1cc769391b203a2478d6ce280d97d383,
         type: 3}
-      propertyPath: m_Name
-      value: DisplayController
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811055055457745408, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8811055056178011640, guid: 1cc769391b203a2478d6ce280d97d383,
         type: 3}
@@ -383,20 +388,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8811055056178011641, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: m_Name
+      value: DisplayController
+      objectReference: {fileID: 0}
     - target: {fileID: 8811055056178011647, guid: 1cc769391b203a2478d6ce280d97d383,
         type: 3}
       propertyPath: CameraFOV
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811055054076470027, guid: 1cc769391b203a2478d6ce280d97d383,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811055055457745408, guid: 1cc769391b203a2478d6ce280d97d383,
-        type: 3}
-      propertyPath: m_PixelPerfect
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cc769391b203a2478d6ce280d97d383, type: 3}
@@ -953,7 +953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855047083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.15, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1122538742}
@@ -981,11 +981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: c3fed053e15f8ed418ec61d02ba0b3e3,
-        type: 3}
-      propertyPath: m_Name
-      value: X_NorthWalls_Internal
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c3fed053e15f8ed418ec61d02ba0b3e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1055,6 +1050,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c3fed053e15f8ed418ec61d02ba0b3e3,
+        type: 3}
+      propertyPath: m_Name
+      value: X_NorthWalls_Internal
       objectReference: {fileID: 0}
     - target: {fileID: 2534866581884222612, guid: c3fed053e15f8ed418ec61d02ba0b3e3,
         type: 3}
@@ -1172,7 +1172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204102609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.75, y: 0, z: 0}
+  m_LocalPosition: {x: -34.75, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1122538742}
@@ -1218,7 +1218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233676659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0.15, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1122538742}
@@ -1322,6 +1322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a783bd812328f8c469bb2af3043bbf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugMode: 0
   playerController: {fileID: 446497926}
   xMazeTaskInfo: {fileID: 83111432}
 --- !u!95 &1337264361
@@ -1520,16 +1521,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
-    - target: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
-        type: 3}
-      propertyPath: m_Name
-      value: SouthWall
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 2a698d898f5ef85429d21399f921b561,
-        type: 3}
-      propertyPath: m_Name
-      value: X_SouthWalls_Internal
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2a698d898f5ef85429d21399f921b561,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1599,6 +1590,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2a698d898f5ef85429d21399f921b561,
+        type: 3}
+      propertyPath: m_Name
+      value: X_SouthWalls_Internal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
+        type: 3}
+      propertyPath: m_Name
+      value: SouthWall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a698d898f5ef85429d21399f921b561, type: 3}
@@ -1859,7 +1860,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 51.60138
+  field of view: 50.08463
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2018,16 +2019,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
-    - target: {fileID: 2534866581884222612, guid: 127fdc7ce09cd024589123ffab201edd,
-        type: 3}
-      propertyPath: m_Name
-      value: WestWall
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 127fdc7ce09cd024589123ffab201edd,
-        type: 3}
-      propertyPath: m_Name
-      value: X_WestWalls_Internal
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 127fdc7ce09cd024589123ffab201edd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2097,6 +2088,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 127fdc7ce09cd024589123ffab201edd,
+        type: 3}
+      propertyPath: m_Name
+      value: X_WestWalls_Internal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 127fdc7ce09cd024589123ffab201edd,
+        type: 3}
+      propertyPath: m_Name
+      value: WestWall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127fdc7ce09cd024589123ffab201edd, type: 3}
@@ -2113,16 +2114,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1756953762}
     m_Modifications:
-    - target: {fileID: 2534866581884222612, guid: 747b375e73d75d646ac9abeabb8fcf88,
-        type: 3}
-      propertyPath: m_Name
-      value: EastWall
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 747b375e73d75d646ac9abeabb8fcf88,
-        type: 3}
-      propertyPath: m_Name
-      value: X_EastWalls_Internal
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 747b375e73d75d646ac9abeabb8fcf88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2192,6 +2183,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 747b375e73d75d646ac9abeabb8fcf88,
+        type: 3}
+      propertyPath: m_Name
+      value: X_EastWalls_Internal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: 747b375e73d75d646ac9abeabb8fcf88,
+        type: 3}
+      propertyPath: m_Name
+      value: EastWall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747b375e73d75d646ac9abeabb8fcf88, type: 3}
