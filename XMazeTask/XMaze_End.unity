@@ -398,6 +398,26 @@ PrefabInstance:
       propertyPath: CameraFOV
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8811055056178011647, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: AutoLaunch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811055056178011647, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: ScreenOffset
+      value: -1680
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811055056178011647, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: ScreenWidth
+      value: 1680
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811055056178011647, guid: 1cc769391b203a2478d6ce280d97d383,
+        type: 3}
+      propertyPath: ScreenHeight
+      value: 1050
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cc769391b203a2478d6ce280d97d383, type: 3}
 --- !u!4 &216718773 stripped
@@ -1322,7 +1342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a783bd812328f8c469bb2af3043bbf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 0
+  DebugMode: 1
   playerController: {fileID: 446497926}
   xMazeTaskInfo: {fileID: 83111432}
 --- !u!95 &1337264361
@@ -1778,7 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a190d6ae19cff4c95943395ac77e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviceType: 2
+  deviceType: 1
   Move_Sensitivity: 2
   Turn_Sensitivity: 1
 --- !u!4 &1592581713
@@ -1860,7 +1880,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50.08463
+  field of view: 54.906864
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
