@@ -516,7 +516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eeaf91468ff2cf458560a0804af5525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputCtrl: {fileID: 1592581712}
 --- !u!1 &460452617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
@@ -1488,7 +1487,7 @@ GameObject:
   - component: {fileID: 1592581713}
   - component: {fileID: 1592581712}
   m_Layer: 0
-  m_Name: InputController
+  m_Name: ExperimentConfiguration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1503,12 +1502,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1592581711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a190d6ae19cff4c95943395ac77e81, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a25067d5ede354fb8e17f4962bb9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviceType: 2
-  Move_Sensitivity: 2
-  Turn_Sensitivity: 1
+  SetInputDevice: 2
+  SetMoveSensitivity: 2
+  SetTurnSensitivity: 2
+  SetEyeTracker: 2
+  SetGazeRadius: 2
+  SetPlaybackMode: 0
+  SetTaskName: XMaze
+  SetMonkeyName: Monkey
+  SetDate: 00-00
+  SetRecordToFile: 1
+  SetScreenWidth: 1920
+  SetScreenHeight: 1080
+  SetScreenOffset: 0
+  SetMenuBarHeight: 21
+  SetAutoLaunch: 1
+  SetCameraFOV: 90
 --- !u!4 &1592581713
 Transform:
   m_ObjectHideFlags: 0

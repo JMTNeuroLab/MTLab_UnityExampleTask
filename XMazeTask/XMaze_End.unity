@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 408532973}
   - component: {fileID: 408532975}
   - component: {fileID: 408532974}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: S_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1581,11 +1581,16 @@ MonoBehaviour:
   SetTurnSensitivity: 2
   SetEyeTracker: 0
   SetGazeRadius: 2
+  SetPlaybackMode: 0
+  SetTaskName: XMaze
+  SetMonkeyName: Monkey
+  SetDate: 00-00
+  SetRecordToFile: 1
   SetScreenWidth: 1920
   SetScreenHeight: 1080
   SetScreenOffset: 0
   SetMenuBarHeight: 21
-  SetAutoLaunch: 1
+  SetAutoLaunch: 0
   SetCameraFOV: 90
 --- !u!1 &1697063320
 GameObject:
@@ -1652,7 +1657,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 48.7346
+  field of view: 57.430157
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1681,7 +1686,7 @@ GameObject:
   - component: {fileID: 1722068254}
   - component: {fileID: 1722068256}
   - component: {fileID: 1722068255}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: N_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

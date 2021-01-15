@@ -237,11 +237,12 @@ MonoBehaviour:
   - {fileID: 1488199948}
   DistractorObjects:
   - {fileID: 1456045613}
-  NTargets: 1
-  NDistractors: 1
   PossiblePositions:
   - {fileID: 855047083}
   - {fileID: 1233676659}
+  NTargets: 1
+  NDistractors: 1
+  MultipleTargets: 0
   Conditions:
   - CueMaterial: {fileID: 2100000, guid: 4e2be6161e9cb5641a6f153377ad6ead, type: 2}
     TargetMaterials:
@@ -488,7 +489,7 @@ Transform:
   m_Children:
   - {fileID: 1697063321}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!82 &446497923
 AudioSource:
@@ -632,7 +633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eeaf91468ff2cf458560a0804af5525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputCtrl: {fileID: 1592581712}
 --- !u!1 &460452617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: 2a698d898f5ef85429d21399f921b561,
@@ -684,7 +684,7 @@ Transform:
   - {fileID: 1279966043}
   - {fileID: 181702843}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1066,6 +1066,65 @@ MonoBehaviour:
   markerType: 1
   Visible: 1
   Size: 0.5
+--- !u!1 &1269685342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269685344}
+  - component: {fileID: 1269685343}
+  m_Layer: 0
+  m_Name: ExperimentConfiguration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1269685343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269685342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a25067d5ede354fb8e17f4962bb9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetInputDevice: 2
+  SetMoveSensitivity: 2
+  SetTurnSensitivity: 2
+  SetEyeTracker: 2
+  SetGazeRadius: 2
+  SetPlaybackMode: 0
+  SetTaskName: XMaze
+  SetMonkeyName: Monkey
+  SetDate: 00-00
+  SetRecordToFile: 1
+  SetScreenWidth: 1920
+  SetScreenHeight: 1080
+  SetScreenOffset: 0
+  SetMenuBarHeight: 21
+  SetAutoLaunch: 1
+  SetCameraFOV: 90
+--- !u!4 &1269685344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269685342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5444326, y: 0.27842236, z: -4.8528585}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1279966042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1188,7 @@ Transform:
   m_Children:
   - {fileID: 83111431}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1337264360
 MonoBehaviour:
@@ -1527,52 +1586,6 @@ MonoBehaviour:
   markerType: 0
   Visible: 1
   Size: 0.5
---- !u!1 &1592581711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1592581713}
-  - component: {fileID: 1592581712}
-  m_Layer: 0
-  m_Name: InputController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1592581712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592581711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a190d6ae19cff4c95943395ac77e81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceType: 2
-  Move_Sensitivity: 2
-  Turn_Sensitivity: 1
---- !u!4 &1592581713
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592581711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 244.66794, y: -166.36746, z: 505.89545}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697063320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,7 +1651,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 49.638226
+  field of view: 54.31959
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
