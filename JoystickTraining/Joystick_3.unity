@@ -304,7 +304,7 @@ MonoBehaviour:
   SetScreenHeight: 1080
   SetScreenOffset: 0
   SetMenuBarHeight: 21
-  SetAutoLaunch: 1
+  SetAutoLaunch: 0
   SetCameraFOV: 90
 --- !u!1 &432824158
 GameObject:
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ac8f05e576b944db622b7dbc9fae5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 1
+  DebugMode: 0
   playerController: {fileID: 903141206}
   joystickTaskInfo: {fileID: 886817873}
 --- !u!4 &683983787
@@ -953,6 +953,7 @@ MonoBehaviour:
   NTargets: 3
   NDistractors: 0
   MultipleTargets: 1
+  MultipleRewardsScale: 4
   Conditions:
   - CueMaterial: {fileID: 0}
     TargetMaterials:
@@ -1589,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 935836295560997998, guid: b82977eece313794a913cec20105a4e3,
         type: 3}
       propertyPath: field of view
-      value: 50.097183
+      value: 51.759216
       objectReference: {fileID: 0}
     - target: {fileID: 935836297282357619, guid: b82977eece313794a913cec20105a4e3,
         type: 3}
