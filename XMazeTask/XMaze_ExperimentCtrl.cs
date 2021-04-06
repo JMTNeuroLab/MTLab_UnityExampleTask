@@ -50,7 +50,18 @@ public class XMaze_ExperimentCtrl : ExperimentController
         // Most of this is copy pasted from the base function. 
 
         // get current trial
-        _currentTrial = _allTrials[_trialNumber];
+        // _currentTrial = _allTrials[_trialNumber];
+
+        // Instead of getting the trial from index, which risks running out of prepared trials
+        // we will get the first one and remove it from the list, then refill the list once empty.
+        _currentTrial = _allTrials[0];
+        _allTrials.RemoveAt(0);
+
+        if (_allTrials.Count == 0)
+        {
+            PrepareAllTrials();
+        }
+
         // increment counter after since we number trials 1: but indices are 0:
         _trialNumber++;
         _currentTrial.Trial_Number = _trialNumber;

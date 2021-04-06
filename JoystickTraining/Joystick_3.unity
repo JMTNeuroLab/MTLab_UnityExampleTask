@@ -304,7 +304,7 @@ MonoBehaviour:
   SetScreenHeight: 1080
   SetScreenOffset: 0
   SetMenuBarHeight: 21
-  SetAutoLaunch: 0
+  LaunchFullScreen: 0
   SetCameraFOV: 90
 --- !u!1 &432824158
 GameObject:
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ac8f05e576b944db622b7dbc9fae5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 0
+  DebugMode: 1
   playerController: {fileID: 903141206}
   joystickTaskInfo: {fileID: 886817873}
 --- !u!4 &683983787
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e45d93de80be4a41b4e17619e903a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfSets: 5
+  NumberOfSets: 1
   StartPositions:
   - {fileID: 82925853}
   ContinuousTrials: 0
@@ -933,24 +933,7 @@ MonoBehaviour:
   DistractorObjects: []
   PossiblePositions:
   - {fileID: 1375252417}
-  - {fileID: 1163401255}
-  - {fileID: 665096062}
-  - {fileID: 1463295191}
-  - {fileID: 532682134}
-  - {fileID: 1745128870}
-  - {fileID: 1321899444}
-  - {fileID: 1502449892}
-  - {fileID: 689567663}
-  - {fileID: 1101067099}
-  - {fileID: 432824158}
-  - {fileID: 461464509}
-  - {fileID: 1366821057}
-  - {fileID: 1528342472}
-  - {fileID: 1753865572}
-  - {fileID: 1597032824}
-  - {fileID: 221797346}
-  - {fileID: 1282428478}
-  NTargets: 3
+  NTargets: 1
   NDistractors: 0
   MultipleTargets: 1
   MultipleRewardsScale: 4

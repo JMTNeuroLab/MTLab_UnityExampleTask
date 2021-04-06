@@ -240,6 +240,7 @@ MonoBehaviour:
   NTargets: 1
   NDistractors: 1
   MultipleTargets: 0
+  MultipleRewardsScale: 0
   Conditions:
   - CueMaterial: {fileID: 2100000, guid: 4e2be6161e9cb5641a6f153377ad6ead, type: 2}
     TargetMaterials:
@@ -1579,7 +1580,7 @@ MonoBehaviour:
   SetInputDevice: 2
   SetMoveSensitivity: 2
   SetTurnSensitivity: 2
-  SetEyeTracker: 0
+  SetEyeTracker: 2
   SetGazeRadius: 2
   SetPlaybackMode: 0
   SetTaskName: XMaze
@@ -1657,7 +1658,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 57.430157
+  field of view: 50.802784
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
